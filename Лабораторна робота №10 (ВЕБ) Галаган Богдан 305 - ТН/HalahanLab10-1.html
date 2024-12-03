@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "section1 section2 section3"
+                "section4 section4 section3"
+                "footer footer footer";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            gap: 10px;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4682b4;
+        }
+
+        .section1 {
+            grid-area: section1;
+            background-color: #48d1cc;
+        }
+
+        .section2 {
+            grid-area: section2;
+            background-color: #fa8072;
+        }
+
+        .section3 {
+            grid-area: section3;
+            background-color: #ffd700;
+        }
+
+        .section4 {
+            grid-area: section4;
+            background-color: #3cb371;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #cd5c5c;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="section1">Section 1</div>
+    <div class="section2">Section 2</div>
+    <div class="section3">Section 3</div>
+    <div class="section4">Section 4</div>
+    <footer>Footer</footer>
+</body>
+</html>
